@@ -1,19 +1,13 @@
-import React from 'react'
-import ReactDom from 'react-dom'
-import './index.css'
+import React from 'react';
+import ReactDom from 'react-dom';
+import './index.css';
+import Content from './components/Content'
 
 const App = () => {
     return (
         <>
-            <input type="checkbox" />
-            <p>placeholder text</p>
-
-            <input type="checkbox" />
-            <p>placeholder text</p>
-
-            <input type="checkbox" />
-            <p>placeholder text</p>
+            <Content />
         </>
     )
 }
-export default App
+export default App;
