@@ -5,14 +5,14 @@ const TimeOfDay = () => {
     const hours = date.getHours();
     let timeOfDay;
     if(hours<12) {
-        timeOfDay='morning'
+        timeOfDay='Morning'
     } else if(hours > 12 && hours < 17){
-        timeOfDay='evening'
+        timeOfDay='Evening'
     } else{
-        timeOfDay='night'
+        timeOfDay='Night'
     }
 return(
-    <h1>Good {timeOfDay}</h1>
+    <h1>Good {timeOfDay} </h1>
 )
 }
 export default TimeOfDay;

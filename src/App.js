@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import './index.css';
-import Content from './components/Content'
+import Todoitem from './components/Todoitem'
+import TimeOfDay from './components/TimeOfDay'
 
 const App = () => {
     return (
-        <>
-            <Content />
-        </>
+        <div className ="todo-list">
+            <TimeOfDay />
+            <Todoitem />
+            <Todoitem />
+        </div>
     )
 }
 export default App;
