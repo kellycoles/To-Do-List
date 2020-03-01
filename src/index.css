@@ -13,7 +13,7 @@ body {
     /* top layer shadow */
     0 1px 1px rgba(0,0,0,0.15),
     /* the second layer */
-    0 10 px 0 -5px #eee,
+    0 10px 0 -5px #eee,
     /* the second layer shadow */
     0 10px 1px -4px rgba(0,0,0,0.15),
     /* the third layer */
