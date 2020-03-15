@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDom from 'react-dom';
 import './index.css';
-import Todoitem from './components/Todoitem'
+import TodoItem from './components/TodoItem'
 import TimeOfDay from './components/TimeOfDay'
 import todosData from "./todosData"
 
-const App = () => {
-    const todoItems = todosData.map(item => <ToDoItem key = {item.id} item = {item}/>)
-    return (
-        <div className ="todo-list">
-            <TimeOfDay />
-            {todoItems}
-        </div>
-    )
+class App extends Component {
+    constructor() {
+        super()
+        this.state = {
+            todos: todosData
+        }
+    }
+    render() {
+        const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} />)
+        return (
+            <div className="todo-list">
+                <TimeOfDay />
+                {todoItems}
+            </div>
+        )
+    }
 }
 export default App;

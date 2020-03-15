@@ -1,7 +1,7 @@
 import React from "react"
 
 
-const Todoitem = (props) => {
+const TodoItem = (props) => {
     return (
         <div className="todo-item">
             <input type="checkbox" />
@@ -9,4 +9,4 @@ const Todoitem = (props) => {
         </div>
     )
 }
-export default Todoitem
+export default TodoItem
